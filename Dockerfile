@@ -4,6 +4,7 @@ ENV PORT=7240
 ENV VERSION=0.3.0
 RUN mkdir /server
 RUN mkdir /server/src
+RUN mkdir /server/resources
 
 ADD ./serverconfig.sh /serverconfig.sh
 ADD ./startup.sh /startup.sh
