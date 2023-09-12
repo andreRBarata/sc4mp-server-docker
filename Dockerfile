@@ -1,7 +1,7 @@
 FROM python:alpine3.18
 
 ENV PORT=7240
-ENV VERSION=0.3.0
+ENV VERSION=0.3.1
 RUN mkdir /server
 RUN mkdir /server/src
 
@@ -17,9 +17,6 @@ RUN unzip ./v$VERSION.zip -d ./src
 RUN mv ./src/sc4mp-server-$VERSION/* .
 RUN rm -r ./src
 RUN rm ./v$VERSION.zip
-
-RUN sed -i -e 's/import os/import os, getpass/g' /server/sc4mpserver.py
-RUN sed -i -e 's/os\.getlogin()/getpass\.getuser()/g' /server/sc4mpserver.py
 
 RUN mkdir /server/_SC4MP
 
