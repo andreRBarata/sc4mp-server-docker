@@ -86,8 +86,14 @@ docker run -d \
 | SERVER_URL               | URL for the server's website or info                               | www.sc4mp.org            |
 | SERVER_ID                | Server ID or unique identifier                                     | <randomly generated>     |
 | SERVER_DESCRIPTION       | Description of the SimCity 4 server                                | Join and build your city.\n\nRules:\n- Feed the llamas\n- Balance your budget\n- Do uncle Vinny some favors |
-| AUTO_UPDATE              | Enable auto-updates for the server                                 | True                     |
+| AUTO_UPDATE              | Enable auto-updates for the server when restarted                  | True                     |
 | CONFIG_AUTO_UPDATE       | Enable creation of config file from env variables on server start  | True                     |
+
+#### Manual server update
+To update the server run the following command:
+```bash
+docker exec -it <container name> sh -c "/update.sh"
+```
 
 ## Troubleshooting
 

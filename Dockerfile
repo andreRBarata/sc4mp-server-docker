@@ -10,6 +10,8 @@ RUN mkdir /server/_SC4MP
 
 ADD ./serverconfig.sh /serverconfig.sh
 ADD ./startup.sh /startup.sh
+ADD ./update.sh /update.sh
+
 
 RUN apk add wget unzip jq
 
