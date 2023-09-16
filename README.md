@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Usage](#usage)
 - [Configuration and Usage](#configuration-and-usage)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
