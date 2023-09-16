@@ -2,6 +2,7 @@ FROM python:alpine3.18
 
 ENV PORT=7240
 ENV AUTO_UPDATE=True
+ENV CONFIG_AUTO_UPDATE=True
 RUN mkdir /server
 RUN mkdir /server/src
 RUN mkdir /server/releases
