@@ -64,30 +64,30 @@ docker run -d \
   andrerbarata/sc4mp-server-docker:latest
 ```
 
-| Variable                 | Description                                                        | Default Value            |
-|--------------------------|--------------------------------------------------------------------|--------------------------|
-| MAX_REQUEST_THREADS      | Maximum request threads for the server                             | 200                      |
-| REQUEST_LIMIT            | Request limit for the server                                       | 60                       |
-| BACKUP_SERVER_ON_STARTUP | Enable server backup on startup                                    | True                     |
-| SERVER_BACKUP_INTERVAL   | Interval for server backups (in minutes)                           | 6                        |
-| MAX_SAVEGAME_BACKUPS     | Maximum savegame backups to retain                                 | 5                        |
-| HOST                     | Host address for the server                                        | 0.0.0.0                  |
-| DISCOVERABLE             | Make the server discoverable                                       | True                     |
-| PORT                     | Server port                                                        | 7240                     |
-| GODMODE_FILTER           | Enable Godmode filter for the server                               | True                     |
-| CLAIM_DURATION           | Duration of claims (in hours)                                      | 30                       |
-| MAX_REGION_CLAIMS        | Maximum region claims allowed                                      | 1                        |
-| USER_PLUGINS             | Allow User plugins                                                 | False                    |
-| PRIVATE                  | Set the server as private                                          | False                    |
-| PASSWORD_ENABLED         | Enable password protection                                         | False                    |
-| PASSWORD                 | Password for server access (if enabled)                            | maxis2003                |
-| MAX_IP_USERS             | Maximum users allowed from the same IP                             | 3                        |
-| SERVER_NAME              | Name of the SimCity 4 server                                       | <username> on <hostname> |
-| SERVER_URL               | URL for the server's website or info                               | www.sc4mp.org            |
-| SERVER_ID                | Server ID or unique identifier                                     | <randomly generated>     |
+| Variable                 | Description                                                        | Default Value                        |
+|--------------------------|--------------------------------------------------------------------|--------------------------------------|
+| MAX_REQUEST_THREADS      | Maximum request threads for the server                             | 200                                  |
+| REQUEST_LIMIT            | Request limit for the server                                       | 60                                   |
+| BACKUP_SERVER_ON_STARTUP | Enable server backup on startup                                    | True                                 |
+| SERVER_BACKUP_INTERVAL   | Interval for server backups (in minutes)                           | 6                                    |
+| MAX_SAVEGAME_BACKUPS     | Maximum savegame backups to retain                                 | 5                                    |
+| HOST                     | Host address for the server                                        | 0.0.0.0                              |
+| DISCOVERABLE             | Make the server discoverable                                       | True                                 |
+| PORT                     | Server port                                                        | 7240                                 |
+| GODMODE_FILTER           | Enable Godmode filter for the server                               | True                                 |
+| CLAIM_DURATION           | Duration of claims (in hours)                                      | 30                                   |
+| MAX_REGION_CLAIMS        | Maximum region claims allowed                                      | 1                                    |
+| USER_PLUGINS             | Allow User plugins                                                 | False                                |
+| PRIVATE                  | Set the server as private                                          | False                                |
+| PASSWORD_ENABLED         | Enable password protection                                         | False                                |
+| PASSWORD                 | Password for server access (if enabled)                            | maxis2003                            |
+| MAX_IP_USERS             | Maximum users allowed from the same IP                             | 3                                    |
+| SERVER_NAME              | Name of the SimCity 4 server                                       | &lt;username&gt; on &lt;hostname&gt; |
+| SERVER_URL               | URL for the server's website or info                               | www.sc4mp.org                        |
+| SERVER_ID                | Server ID or unique identifier                                     | &lt;randomly generated&gt;           |
 | SERVER_DESCRIPTION       | Description of the SimCity 4 server                                | Join and build your city.\n\nRules:\n- Feed the llamas\n- Balance your budget\n- Do uncle Vinny some favors |
-| AUTO_UPDATE              | Enable auto-updates for the server when restarted                  | True                     |
-| CONFIG_AUTO_UPDATE       | Enable creation of config file from env variables on server start  | True                     |
+| AUTO_UPDATE              | Enable auto-updates for the server when restarted                  | True                                 |
+| CONFIG_AUTO_UPDATE       | Enable creation of config file from env variables on server start  | True                                 |
 
 #### Manual server update
 To update the server run the following command:
