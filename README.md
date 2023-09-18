@@ -9,7 +9,7 @@
 - [License](#license)
 
 ## Introduction
-A dockerizer for the [SC4MP Server](https://github.com/kegsmr/sc4mp-server) for SimCIty 4.
+A dockerizer for the [SC4MP Server](https://github.com/kegsmr/sc4mp-server) for SimCity 4.
 
 The server configurations are available in the form of environment variables.
 
@@ -20,7 +20,7 @@ Well docker and an internet connection, that's about it.
 
 ### Docker Commands
 
-To run the sm4mp-server in a Docker container, you can use the following commands:
+To run the sc4mp-server in a Docker container, you can use the following commands:
 
 #### Pull the Docker Image
 ```bash
@@ -30,7 +30,7 @@ docker pull andrerbarata/sc4mp-server-docker:latest
 #### Run the docker image
 Before launching the container, create the following folders *_SC4MP* and *resources* on your host or in docker external volume. These folders will serve as storage for the server's assets during startup and provide access to server and configuration save files from outside the container. 
 
-Additionally, place your Plugins.zip, Regions.zip, and icon.ico files within the *_SC4MP* folder, following a structure similar to the examples found [here](https://github.com/kegsmr/sc4mp-server/tree/main/resources).
+Additionally, place your *Plugins.zip* and *Regions.zip* within the *resources* folder, following a structure similar to the examples found [here](https://github.com/kegsmr/sc4mp-server/tree/main/resources).
 
 Then run the following command:
 ```bash
@@ -66,15 +66,15 @@ docker run -d \
 | Variable                 | Description                                                        | Default Value                        |
 |--------------------------|--------------------------------------------------------------------|--------------------------------------|
 | MAX_REQUEST_THREADS      | Maximum request threads for the server                             | 200                                  |
-| REQUEST_LIMIT            | Request limit for the server                                       | 60                                   |
+| REQUEST_LIMIT            | Request limit for a client (per minute)                            | 60                                   |
 | BACKUP_SERVER_ON_STARTUP | Enable server backup on startup                                    | True                                 |
-| SERVER_BACKUP_INTERVAL   | Interval for server backups (in minutes)                           | 6                                    |
+| SERVER_BACKUP_INTERVAL   | Interval for server backups (in hours)                             | 6                                    |
 | MAX_SAVEGAME_BACKUPS     | Maximum savegame backups to retain                                 | 5                                    |
 | HOST                     | Host address for the server                                        | 0.0.0.0                              |
 | DISCOVERABLE             | Make the server discoverable                                       | True                                 |
 | PORT                     | Server port                                                        | 7240                                 |
 | GODMODE_FILTER           | Enable Godmode filter for the server                               | True                                 |
-| CLAIM_DURATION           | Duration of claims (in hours)                                      | 30                                   |
+| CLAIM_DURATION           | Duration of claims (in days)                                       | 30                                   |
 | MAX_REGION_CLAIMS        | Maximum region claims allowed                                      | 1                                    |
 | USER_PLUGINS             | Allow User plugins                                                 | False                                |
 | PRIVATE                  | Set the server as private                                          | False                                |
