@@ -30,7 +30,7 @@ docker pull andrerbarata/sc4mp-server-docker:latest
 #### Run the docker image
 Before launching the container, create the following folders *_SC4MP* and *resources* on your host or in docker external volume. These folders will serve as storage for the server's assets during startup and provide access to server and configuration save files from outside the container. 
 
-Additionally, place your *Plugins.zip*, *Regions.zip* and *icon.ico* within the *resources* folder, following a structure similar to the examples found [here](https://github.com/kegsmr/sc4mp-server/tree/main/resources).
+Additionally, place your *Plugins.zip* and *Regions.zip* within the *resources* folder, following a structure similar to the examples found [here](https://github.com/kegsmr/sc4mp-server/tree/main/resources).
 
 Then run the following command:
 ```bash
