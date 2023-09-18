@@ -20,7 +20,7 @@ Well docker and an internet connection, that's about it.
 
 ### Docker Commands
 
-To run the sm4mp-server in a Docker container, you can use the following commands:
+To run the sc4mp-server in a Docker container, you can use the following commands:
 
 #### Pull the Docker Image
 ```bash
@@ -66,7 +66,7 @@ docker run -d \
 | Variable                 | Description                                                        | Default Value                        |
 |--------------------------|--------------------------------------------------------------------|--------------------------------------|
 | MAX_REQUEST_THREADS      | Maximum request threads for the server                             | 200                                  |
-| REQUEST_LIMIT            | Request limit for the server                                       | 60                                   |
+| REQUEST_LIMIT            | Request limit for a client (per minute)                            | 60                                   |
 | BACKUP_SERVER_ON_STARTUP | Enable server backup on startup                                    | True                                 |
 | SERVER_BACKUP_INTERVAL   | Interval for server backups (in hours)                             | 6                                    |
 | MAX_SAVEGAME_BACKUPS     | Maximum savegame backups to retain                                 | 5                                    |
